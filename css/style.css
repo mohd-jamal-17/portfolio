@@ -433,3 +433,25 @@ section.resume-section {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+<style>
+.description-box {
+    margin-top: 10px;
+    display: none;
+}
+
+.description-box.show {
+    display: block;
+}
+
+.portfolio-item h5 {
+    cursor: pointer;
+}
+
+.portfolio-item {
+    margin-bottom: 40px;
+    min-height: 420px; /* or 440px based on your content */
+}
+.row.g-4 {
+    row-gap: 40px;
+}
+</style>
