@@ -30,6 +30,26 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+.description-box {
+    margin-top: 10px;
+    display: none;
+}
+
+.description-box.show {
+    display: block;
+}
+
+.portfolio-item h5 {
+    cursor: pointer;
+}
+
+/* FIX: Ensure spacing between rows when description is revealed */
+.portfolio-item {
+    margin-bottom: 30px;
+}
+</style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -367,7 +387,7 @@
 
         <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
             <!-- Academic Project -->
-            <div class="col-lg-4 col-md-6 portfolio-item academic">
+            <div class="col-md-4 col-sm-6 portfolio-item academic">
                 <div class="portfolio-img rounded overflow-hidden">
                     <img class="img-fluid" src="img/project-1.jpg" alt="Academic Project">
                     <div class="portfolio-btn">
@@ -376,15 +396,15 @@
                     </div>
                 </div>
                 <h5 class="fw-semibold mt-3">Project: Network Pharmacological Approach with Molecular Docking & Dynamics to Marine Compounds in Cardiovascular Disease.</i></h5>
-                <div class="description-box d-none">
-                    <p class="mb-0">Conducted gene-target-pathway mapping and docking simulations to explore therapeutic potential of marine 
-compounds for cardiovascular disease, supporting pharmaceutical research objectives. 
+                <div class="description-box">
+                    <p class="mb-0"><strong> Gene-target-pathway mapping and docking simulations to explore therapeutic potential of marine 
+compounds for cardiovascular disease, supporting pharmaceutical research objectives.</strong> 
 </i>.</p>
                 </div>
             </div>
 
             <!-- Internship Project -->
-            <div class="col-lg-4 col-md-6 portfolio-item internship">
+            <div class="col-md-4 col-sm-6 portfolio-item internship">
                 <div class="portfolio-img rounded overflow-hidden">
                     <img class="img-fluid" src="img/project-2.jpg" alt="Internship Project">
                     <div class="portfolio-btn">
@@ -393,13 +413,13 @@ compounds for cardiovascular disease, supporting pharmaceutical research objecti
                     </div>
                 </div>
                 <h5 class="fw-semibold mt-3">Project: Drug Discovery for COVID-19 Using Molecular Docking</h5>
-                <div class="description-box d-none">
-                    <p class="mb-0">Analyzed molecular interactions to identify lead candidates for COVID-19 targets.</p>
+                <div class="description-box">
+                    <p class="mb-0"><strong> molecular interactions to identify lead candidates for COVID-19 targets.</strong></p>
                 </div>
             </div>
 
             <!-- Project 1 -->
-            <div class="col-lg-4 col-md-6 portfolio-item projects">
+            <div class="col-md-4 col-sm-6 portfolio-item projects">
                 <div class="portfolio-img rounded overflow-hidden">
                     <img class="img-fluid" src="img/project-3.jpg" alt="Project 1">
                     <div class="portfolio-btn">
@@ -408,16 +428,16 @@ compounds for cardiovascular disease, supporting pharmaceutical research objecti
                     </div>
                 </div>
                 <h5 class="fw-semibold mt-3"> Clinical Trial Data Analysis using Excel </h5>
-                <div class="description-box d-none">
-                    <p class="mb-0"> Cleaned and analyzed a dataset of 20 patients to evaluate treatment outcomes and adverse events. 
-  Used Pivot Tables to summarize patient responses, treatment results, and AE frequency.  Created Excel 
+                <div class="description-box">
+                    <p class="mb-0"><strong>1) Cleaned and analyzed a dataset of 20 patients to evaluate treatment outcomes and adverse events. 
+2)  Used Pivot Tables to summarize patient responses, treatment results, and AE frequency.  3) Created Excel 
 charts for gender distribution, outcome by age group, and AE severity. 
-  Tools Used: Microsoft Excel (Filters, Pivot Tables, Charts). </p>
+4)  Tools Used: Microsoft Excel (Filters, Pivot Tables, Charts). </strong></p>
                 </div>
             </div>
 
             <!-- Project 2 -->
-            <div class="col-lg-4 col-md-6 portfolio-item projects">
+            <div class="col-md-4 col-sm-6 portfolio-item projects">
                 <div class="portfolio-img rounded overflow-hidden">
                     <img class="img-fluid" src="img/project-4.jpg" alt="Project 2">
                     <div class="portfolio-btn">
@@ -426,16 +446,16 @@ charts for gender distribution, outcome by age group, and AE severity.
                     </div>
                 </div>
                 <h5 class="fw-semibold mt-3">Healthcare Data Analysis using Python & Power BI</h5>
-                <div class="description-box d-none">
-                    <p class="mb-0"> Cleaned hospital discharge data using Python (Pandas, NumPy) in Google Colab. 
- Handled missing values, standardized records, and structured the dataset.  
- Built Power BI dashboards with slicers, KPIs, and visual charts for readmission patterns. 
- Tools Used: Python (Colab), Power BI</p>
+                <div class="description-box">
+                    <p class="mb-0"><strong>1) Cleaned hospital discharge data using Python (Pandas, NumPy) in Google Colab. 
+2) Handled missing values, standardized records, and structured the dataset.  
+3) Built Power BI dashboards with slicers, KPIs, and visual charts for readmission patterns. 
+4) Tools Used: Python (Colab), Power BI</strong></p>
                 </div>
             </div>
 
             <!-- Project 3 -->
-             <div class="col-lg-4 col-md-6 portfolio-item projects">
+             <div class="col-md-4 col-sm-6 portfolio-item projects">
                 <div class="portfolio-img rounded overflow-hidden">
                     <img class="img-fluid" src="img/project-5.jpeg" alt="Project 3">
                     <div class="portfolio-btn">
@@ -444,16 +464,16 @@ charts for gender distribution, outcome by age group, and AE severity.
                     </div>
                 </div>
                 <h5 class="fw-semibold mt-3">Clinical Hospital Data Analysis</h5>
-                <div class="description-box d-none">
-                    <p class="mb-0"> Analyzed hospital performance metrics like mortality, readmission, and safety scores using real-world  
+                <div class="description-box">
+                    <p class="mb-0"><strong>1) Analyzed hospital performance metrics like mortality, readmission, and safety scores using real-world  
 clinical data. 
- Cleaned data in Excel, transformed using SAS, queried via SQL, and visualized KPIs through interactive 
+2) Cleaned data in Excel, transformed using SAS, queried via SQL, and visualized KPIs through interactive 
 Tableau dashboards. 
- Tools Used: SQL, Excel, SAS, Tableau</p>
+3) Tools Used: SQL, Excel, SAS, Tableau</strong></p>
     </div>
         </div>
         <!-- Project 4 -->
-             <div class="col-lg-4 col-md-6 portfolio-item projects">
+             <div class="col-md-4 col-sm-6 portfolio-item projects">
                 <div class="portfolio-img rounded overflow-hidden">
                     <img class="img-fluid" src="img/project-6.png" alt="Project 4">
                     <div class="portfolio-btn">
@@ -462,10 +482,10 @@ Tableau dashboards.
                     </div>
                 </div>
                 <h5 class="fw-semibold mt-3">Medical Coding Mini Project</h5>
-                <div class="description-box d-none">
-                    <p class="mb-0"> Demonstrate Practical Application of ICD-10, CPT and HCPCS Coding. 
- Includes: Diagnosis + Procedure + Supply Coding Based on Real Clinical Cases. 
- Tools Used: ICD-10, CPT HCPCS Medical Codebooks </p>
+                <div class="description-box">
+                    <p class="mb-0"><strong>1) Demonstrate Practical Application of ICD-10, CPT and HCPCS Coding. 
+2) Includes: Diagnosis + Procedure + Supply Coding Based on Real Clinical Cases. 
+3) Tools Used: ICD-10, CPT HCPCS Medical Codebooks </strong></p>
                 </div>
     </div>
 </div>
@@ -633,8 +653,30 @@ claim processing workflows..</li>
         });
     });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const projectTitles = document.querySelectorAll(".portfolio-item h5");
 
+        projectTitles.forEach(title => {
+            title.addEventListener("click", function () {
+                const projectBox = this.closest(".portfolio-item");
+                const descBox = projectBox.querySelector(".description-box");
 
+                // Hide all other open descriptions
+                document.querySelectorAll(".description-box").forEach(box => {
+                    if (box !== descBox) {
+                        box.classList.remove("show");
+                    }
+                });
+
+                // Toggle the clicked one
+                if (descBox) {
+                    descBox.classList.toggle("show");
+                }
+            });
+        });
+    });
+</script>
 </body>
 
 </html>
